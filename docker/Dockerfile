@@ -1,4 +1,4 @@
-FROM crystallang/crystal:1.12.1-alpine AS builder
+FROM docker.io/crystallang/crystal:1.12.1-alpine AS builder
 
 RUN apk add --no-cache sqlite-static yaml-static
 
@@ -32,7 +32,7 @@ RUN if [[ "${release}" == 1 ]] ; then \
         --link-flags "-lxml2 -llzma"; \
     fi
 
-FROM alpine:3.18
+FROM docker.io/alpine:3.18
 RUN apk add --no-cache rsvg-convert ttf-opensans tini
 WORKDIR /invidious
 RUN addgroup -g 1000 -S invidious && \
