@@ -1,6 +1,6 @@
 {
-    "name": "Invidious",
-    "short_name": "Invidious",
+    "name": "video.chi.team",
+    "short_name": "video.chi.team",
     "icons": [
         {
             "src": "/android-chrome-192x192.png",
@@ -16,6 +16,6 @@
     "theme_color": "#575757",
     "background_color": "#575757",
     "display": "standalone",
-    "description": "An alternative front-end to YouTube",
+    "description": "Платформа для просмотра видео",
     "start_url": "/"
 }
